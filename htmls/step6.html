@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar here to use every steps -->
+    <nav
+      class="fixed top-0 w-full bg-white flex px-40 py-5 justify-between items-center"
+    >
+      <a href="" class="flex items-center gap-3 align-items-center">
+        <span
+          class="border border-gray-400 rounded-full px-2"
+          style="font-size: 15px"
+          >?</span
+        >
+        Help
+      </a>
+      <a href="">
+        Return to Home
+        <i class="fa-regular fa-house"></i>
+      </a>
+    </nav>
+    <!-- navbar here to use every steps -->
+
+    <main
+      class="h-full w-full py-20 mb-20"
+      style="background-color: rgb(250, 249, 249)"
+    >
+      <h1 class="text-4xl text-center">Digital Test Security</h1>
+
+      <div class="flex flex-col justify-center items-start max-w-3xl mx-auto mt-7" style="transform: translateX(40px);">
+        <h3 class="font-bold mb-2">
+            You're bound by the following rules for today's exam:
+        </h3>
+
+        <ul class="list-disc ml-5 mb-11" >
+            <li class="mb-4">You may not give or receive help during the exam. You may not share or post anything related to this exam.</li>
+            <li class="mb-4">Your answers must be entirely your own. College Board will review your responses.</li>
+            <li>If you attempt to cheat, your score will be canceled, college admissions offices may be notified, and you will be disqualified from taking any AP Exams, SAT or PSAT-related assessments, or CLEP exams.</li>
+        </ul>
+
+        <div class="flex justify-center gap-10">
+            <div class="w-80 shadow-lg bg-white px-4 py-4 rounded-lg">
+                <h3 class="font-bold text-center mb-2">Test Security Pledge</h3>
+                <hr class="mb-2 bg-gray-300" style="width: 320px; height: 2px; transform: translateX(-16px);">
+                <p>I'm the person who is supposed to take this exam. I agree to follow the rules above and understand what will happen if i break them</p>
+            </div>
+            <div class="w-80 shadow-lg bg-white px-4 py-4 rounded-lg">
+                <h3 class="font-bold text-center mb-2">Retype the Test Security Pledge</h3>
+                <hr class="mb-2 bg-gray-300" style="width: 320px; height: 2px; transform: translateX(-16px);">
+                <textarea class="focus:outline-none focus:ring-0 resize-none" rows="4" cols="35"></textarea>
+            </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- next/before buttons begin -->
+
+    <div class="main w-full fixed bottom-0 bg-white">
+      <hr class="bg-gray-300" style="width: 100%; height: 4px" />
+      <div class="main-container">
+        <div class="flex justify-between px-40 py-7">
+          <div class="before-button">
+            <button
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Before
+            </button>
+          </div>
+          <div class="bar">
+            <h1 class="text-lg text-center mb-2">Step 6 of 8</h1>
+            <div
+              class="progress-bar w-[600px] h-2 bg-gray-300 rounded-full overflow-hidden"
+            >
+              <div class="progress h-4 bg-blue-800" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="next-button">
+            <button
+              id="myBtn"
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- next and before buttons ended -->
+
+    <script>
+      const btn = document.getElementById("myBtn");
+
+      btn.addEventListener("click", () => {
+        // Add opacity effect
+        btn.classList.add("opacity-50");
+
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step7.html"; // change to your page
+        }, 300); // 300ms = smooth
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar here to use every steps -->
+    <nav class="fixed top-0 w-full bg-white flex px-40 py-5 justify-between items-center">
+      <a href="" class="flex items-center gap-3 align-items-center">
+        <span
+          class="border border-gray-400 rounded-full px-2"
+          style="font-size: 15px"
+          >?</span
+        >
+        Help
+      </a>
+      <a href="">
+        Return to Home
+        <i class="fa-regular fa-house"></i>
+      </a>
+    </nav>
+    <!-- navbar here to use every steps -->
+
+    <!-- main started here -->
+    <main
+      class="h-full w-full py-20 mb-20"
+      style="background-color: rgb(250, 249, 249)"
+    >
+      <h1 class="text-4xl text-center">Test Overview</h1>
+      <!-- h-20 max-w-md mx-auto -->
+      <div class="h-full w-full max-w-3xl mx-auto mt-10">
+        <iframe
+          src="https://player.mux.com/k9KKm8sRmFF5JGt02DDDDMQZmsZLlh6FnVbfMqIXqe9E?muted=true&metadata-video-title=What+to+expect+with+the+digital+SAT+on+a+school+day&video-title=What+to+expect+with+the+digital+SAT+on+a+school+day"
+          style="width: 100%; border: none; aspect-ratio: 427/240"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+          allowfullscreen
+        ></iframe>
+
+        <div class="bg-white shadow-lg p-6">
+          <h3 class="font-bold text-lg mb-2 mt-2">Testing tools</h3>
+          <p class="font-normal mb-2">This video is silent</p>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Section Direction: <p class="font-normal">Directions are at the top left of each test screen,</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Testing Timer: <p class="font-normal">Use the timer to pace yourself. You can hide it until 5 minutes remain.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Annotate: <p class="font-normal">Select some tex, then click Annotate to highlight text or leave yourself a note.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Line Reader: <p class="font-normal">Use the line reader to help you focus as you are reading test content.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Calculator and Reference sheet: <p class="font-normal">If you are taking a digital SAT or PSAT-related assessment, you'll have access to a calculator and a reference sheet.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Help: <p class="font-normal">Click on More to access to Help content.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Expand Left/Right: <p class="font-normal">The center line and buttons let you expand either side of the screen.</p></h3>
+          <p class="mb-2"><b class="text-lg">Zoom: </b>Zoom with keyboard shortcuts on laptops or by pinching on tablets. Quick tip: Zoom using control +/-(PC) or Command +/-(MAC).</p>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Mark for review: <p class="font-normal">use the bookmark icon to flag any question you want to come back to.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Option Eliminator: <p class="font-normal">On multiple choice questions. If you think an answer option is wrong, you can cross it out.</p></h3>
+          <h3 class="font-bold text-lg mb-2 flex gap-1">Question Menu: <p class="font-normal">Navigate to any question in the section.</p></h3>
+        </div>
+      </div>
+    </main>
+    <!-- main ends here -->
+
+    <!-- next and before buttons begin -->
+
+    <div class="main w-full fixed bottom-0 bg-white">
+      <hr class="bg-gray-300" style="width: 100%; height: 4px" />
+      <div class="main-container">
+        <div class="flex justify-between px-40 py-7">
+          <div class="before-button">
+            <button
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Before
+            </button>
+          </div>
+          <div class="bar">
+            <h1 class="text-lg text-center mb-2">Step 5 of 8</h1>
+            <div
+              class="progress-bar w-[600px] h-2 bg-gray-300 rounded-full overflow-hidden"
+            >
+              <div class="progress h-4 bg-blue-800" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="next-button">
+            <button
+              id="myBtn"
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- next and before buttons ended -->
+
+    <script>
+      const btn = document.getElementById("myBtn");
+
+      btn.addEventListener("click", () => {
+        // Add opacity effect
+        btn.classList.add("opacity-50");
+
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step6.html"; // change to your page
+        }, 300); // 300ms = smooth
+      });
+    </script>
+  </body>
+</html>

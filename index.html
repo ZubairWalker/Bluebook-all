@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body style="overflow-y: hidden; overflow-x: hidden">
+    <!-- navbar here to use every steps -->
+    <nav class="bg-white flex px-40 py-5 justify-between items-center">
+      <a href="" class="flex items-center gap-3 align-items-center">
+        <span
+          class="border border-gray-400 rounded-full px-2"
+          style="font-size: 15px"
+          >?</span
+        >
+        Help
+      </a>
+      <a href="">
+        Return to Home
+        <i class="fa-regular fa-house"></i>
+      </a>
+    </nav>
+    <!-- navbar here to use every steps -->
+
+    <!-- main started here -->
+    <main
+      class="h-full w-full py-20"
+      style="background-color: rgb(250, 249, 249)"
+    >
+      <h1 class="text-4xl text-center" style="transform: translateY(-30px);">Confirm Your Personal Information</h1>
+
+      <div
+        class="flex flex-col justify-center m-auto bg-white shadow-lg p-6 border border-gray-200 flex-1 max-w-2xl mt-10"
+        style="height: 370px; transform: translateY(-30px);"
+      >
+        <div class="flex gap-10 px py-5">
+          <div class="flex-1">
+            <h4 class="font-bold mb-2">First and Last Name</h4>
+            <h4 class="text-xl text-gray-700">Zubair Walker</h4>
+          </div>
+          <div class="flex-1">
+            <h4 class="font-bold mb-2">Accommodations</h4>
+            <h4 class="text-xl text-gray-700">
+              You don't have any approved digital testing accommodations
+            </h4>
+          </div>
+        </div>
+        <div class="px-6 mt-10">
+          <p class="text-md text-center">
+            You may have approved accommodations that don't apply to digital
+            testing. Learn more about accommodations .
+          </p>
+        </div>
+
+        <h2 class="font-bold text-lg text-center mt-10">
+          Is this Information correct?
+        </h2>
+        <hr
+          class="bg-gray-300 mt-5"
+          style="width: 671px; height: 2px; transform: translateX(-25px)"
+        />
+
+        <div class="inputss flex justify-between gap-2 px-32">
+          <div
+            style="font-size: 20px; transform: translateY(15px)"
+            class="font-bold"
+          >
+            <input class="w-5 h-5" type="radio" /> Yes
+          </div>
+          <div class="flex">
+            <div
+              class="bg-gray-300"
+              style="width: 2px; height: 64px; transform: translateX()"
+            ></div>
+          </div>
+          <div
+            style="font-size: 20px; transform: translateY(15px)"
+            class="font-bold"
+          >
+            <input class="w-5 h-5 text-black" type="radio" /> No
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main ended here -->
+
+    <!-- next and before buttons begin -->
+
+    <div class="main w-full fixed bottom-0 bg-white">
+      <hr class="bg-gray-300" style="width: 100%; height: 4px" />
+      <div class="main-container">
+        <div class="flex justify-between px-40 py-7">
+          <div class="before-button">
+            <button
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Before
+            </button>
+          </div>
+          <div class="bar">
+            <h1 class="text-lg text-center mb-2">Step 1 of 8</h1>
+            <div
+              class="progress-bar w-[600px] h-2 bg-gray-300 rounded-full overflow-hidden"
+            >
+              <div class="progress h-4 bg-blue-800" style="width: 20%"></div>
+            </div>
+          </div>
+          <div class="next-button">
+            <button
+              id="myBtn"
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- next and before buttons ended -->
+
+    <script>
+      const btn = document.getElementById("myBtn");
+
+      btn.addEventListener("click", () => {
+        // Add opacity effect
+        btn.classList.add("opacity-50");
+
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./htmls/step2.html"; // change to your page
+        }, 300); // 300ms = smooth
+      });
+    </script>
+  </body>
+  
+</html>
+
+

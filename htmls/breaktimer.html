@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #1a1a1a;
+        color: white;
+      }
+      .timer {
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: -2px;
+      }
+      @media (max-width: 768px) {
+        .timer {
+          font-size: 5rem;
+        }
+      }
+      .text-center {
+        border: 1px solid #fff;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+      }
+      .name {
+        transform: translateY(210px) translateX(-250px);
+      }
+      .break {
+        background-color: #ffd600;
+        color: black;
+        border: 1px solid #3a3535;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Arial", sans-serif;
+        transform: translateY(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col md:flex-row">
+      <!-- Timer Section -->
+      <div
+        class="flex-1 flex items-center justify-center flex-col p-8 border-b md:border-b-0 md:border-r border-gray-700"
+      >
+        <div class="text-center">
+          <div
+            class="text-gray-400 mt-2"
+            style="color: #fff; font-weight: bold"
+          >
+            Remaining Break Time:
+          </div>
+          <div class="timer" id="countdown">10:00</div>
+        </div>
+
+        <!-- button starts hidden -->
+        <button id="resumeButton" class="hidden break">Resume</button>
+
+        <h1 class="name" style="font-weight: bold">Sardor alibekov</h1>
+      </div>
+
+      <!-- Instructions Section -->
+      <div class="flex-1 p-8 flex items-center">
+        <div class="max-w-lg mx-auto">
+          <h1 class="text-2xl font-bold mb-4" style="font-size: 40px">
+            Take a Break: Do Not <br />
+            <br />
+            Close Your Device
+          </h1>
+
+          <p class="text-lg mb-6">
+            After the break, a Resume Testing Now button will appear and you
+            will start the next section.
+          </p>
+
+          <div class="p-6 rounded-lg">
+            <h2 class="text-xl mb-4">Follow the rules during the break:</h2>
+            <ul class="space-y-3">
+              <li class="flex">
+                <span class="mr-2">1.</span>
+                <span>Do not disturb students who are still testing.</span>
+              </li>
+              <li class="flex">
+                <span class="mr-2">2.</span>
+                <span>Do not exit the app or close your laptop.</span>
+              </li>
+              <li class="flex">
+                <span class="mr-2">3.</span>
+                <span
+                  >Do not access phones, smartwatches, textbooks, notes, or the
+                  internet.</span
+                >
+              </li>
+              <li class="flex">
+                <span class="mr-2">4.</span>
+                <span>Do not eat or drink near any testing device.</span>
+              </li>
+              <li class="flex">
+                <span class="mr-2">5.</span>
+                <span
+                  >Do not speak in the test room: outside the test room, do not
+                  discuss the exam with anyone.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="resumeButton" class="mt-8 hidden">
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all w-full"
+            >
+              Resume Testing Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Set the countdown time (10 minutes)
+      let timeLeft = 10 * 60; // in seconds 10 * 60
+      const countdownEl = document.getElementById("countdown");
+      const resumeButton = document.getElementById("resumeButton");
+
+      function updateCountdown() {
+        const minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        countdownEl.innerHTML = `${minutes}:${seconds}`;
+
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          countdownEl.innerHTML = "00:00";
+          resumeButton.classList.remove("hidden");
+        } else {
+          timeLeft--;
+        }
+      }
+
+      resumeButton.addEventListener("click", () => {
+        // redirect the user to html file
+        window.location.href = "math.html";
+        // or window.location.assign
+      })
+
+      // Update the countdown every second
+      updateCountdown();
+      const timer = setInterval(updateCountdown, 1000);
+    </script>
+    <!-- <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'968d7a165636c068',t:'MTc1NDEzNjY3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script> -->
+  </body>
+</html>

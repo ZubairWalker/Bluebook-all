@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- navbar here to use every steps -->
+    <nav class="fixed top-0 w-full bg-white flex px-40 py-5 justify-between items-center">
+      <a href="" class="flex items-center gap-3 align-items-center">
+        <span
+          class="border border-gray-400 rounded-full px-2"
+          style="font-size: 15px"
+          >?</span
+        >
+        Help
+      </a>
+      <a href="">
+        Return to Home
+        <i class="fa-regular fa-house"></i>
+      </a>
+    </nav>
+    <!-- navbar here to use every steps -->
+
+
+    <!-- main started here -->
+    
+
+    <main class="h-full w-full py-16"
+      style="background-color: rgb(250, 249, 249)">
+      <h1 class="text-4xl text-center">Test Overview</h1>
+
+      <div
+        class="flex flex-col justify-center m-auto bg-white shadow-lg p-6 border border-gray-200 flex-1 max-w-3xl mt-10 mb-20"
+        style="height: 550px;"
+      >
+      <div style="transform: translateY(-10px);"> 
+      <p class="font-normal ">The digital SAT,PSAT,/NMSQT, PSAT 10, and PSAT 8/9 each consist of a Reading and Writing section and a Math section.</p>
+      <h3 class="font-bold text-lg mt-2 mb-2">Section 1: Reading and Writing (54 Questions)</h3>
+      <p class="font-normal mt-2">there are two modules in the Reading and Writing section. Each module has 27 questions</p>
+      <p class="font-normal mt-2">Each question includes one or more passages, which may include a table or graph. Read each passage and answer carefully, and then choose the best answer to the question based on the the passage(s). All questions in this section are multiple choice with four answer choices. Each questions has a single best answer.</p>
+      <h3 class="font-bold text-lg mb-2">Section 2: Math (44 Questions)</h3>
+      <p class="font-normal mb-2">there are two modules in the Math section. Each module has 22 questions.</p>
+      <h3 class="font-bold text-lg mb-2">Math</h3>
+      <p class="font-normal mb-2">Within each section, the two modules are timed separetely. If time permits, you can review your answers in a given module. When the time reaches zero, you will automatically move on. Once you move on from any module, you cannot return to it</p>
+      <h3 class="font-bold text-lg mb-2">Section Directions</h3>
+      <p class="font-normal">Directions for the Reading and Writing and Math sections can be found in the <b>Help</b> section under <b>More</b> at the top right of your testing screen</p>
+      </div>
+      </div>
+
+    </main>
+        
+      </div>
+    </main>
+    <!-- main ended here -->
+
+
+    <!-- next and before buttons begin -->
+
+    <div class="main w-full fixed bottom-0 bg-white">
+      <hr class="bg-gray-300" style="width: 100%; height: 4px" />
+      <div class="main-container">
+        <div class="flex justify-between px-40 py-7">
+          <div class="before-button">
+            <button
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Before
+            </button>
+          </div>
+          <div class="bar">
+            <h1 class="text-lg text-center mb-2">Step 3 of 8</h1>
+            <div
+              class="progress-bar w-[600px] h-2 bg-gray-300 rounded-full overflow-hidden"
+            >
+              <div class="progress h-4 bg-blue-800" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="next-button">
+            <button
+              id="myBtn"
+              class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- next and before buttons ended -->
+
+     <script>
+      const btn = document.getElementById("myBtn");
+      btn.addEventListener("click", () => {
+        // Add opacity effect
+        btn.classList.add("opacity-50");
+
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step4.html"; // change to your page
+        }, 300); // 300ms = smooth
+      });
+    </script>
+
+</body>
+</html>
