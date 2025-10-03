@@ -44,7 +44,7 @@
         ></iframe>
 
         <div class="bg-white shadow-lg p-6">
-          <h3 class="font-bold text-lg mb-2 mt-2">Testing tools</h3>
+          <h3 class="font-bold text-lg mb-2 mt-7">Testing tools</h3>
           <p class="font-normal mb-2">This video is silent</p>
           <h3 class="font-bold text-lg mb-2 flex gap-1">Section Direction: <p class="font-normal">Directions are at the top left of each test screen,</p></h3>
           <h3 class="font-bold text-lg mb-2 flex gap-1">Testing Timer: <p class="font-normal">Use the timer to pace yourself. You can hide it until 5 minutes remain.</p></h3>
@@ -70,6 +70,7 @@
         <div class="flex justify-between px-40 py-7">
           <div class="before-button">
             <button
+            id="prev"
               class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
             >
               Before
@@ -109,6 +110,17 @@
           window.location.href = "./step6.html"; // change to your page
         }, 300); // 300ms = smooth
       });
+
+      const prev = document.getElementById("prev")
+
+      prev.addEventListener("click", () => {
+         prev.classList.add("opacity-50");
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step3.html"; // change to your page
+        }, 300); // 300ms = smooth
+
+      })
     </script>
   </body>
 </html>

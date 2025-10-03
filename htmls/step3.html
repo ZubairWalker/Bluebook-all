@@ -70,6 +70,7 @@
         <div class="flex justify-between px-40 py-7">
           <div class="before-button">
             <button
+            id="prev"
               class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
             >
               Before
@@ -108,6 +109,17 @@
           window.location.href = "./step4.html"; // change to your page
         }, 300); // 300ms = smooth
       });
+
+      const prev = document.getElementById("prev")
+
+      prev.addEventListener("click", () => {
+         prev.classList.add("opacity-50");
+// Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step2.html"; // change to your page
+        }, 300); // 300ms = smooth
+
+      })
     </script>
 
 </body>

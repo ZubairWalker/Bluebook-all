@@ -10,7 +10,7 @@
     />
     <title>Document</title>
   </head>
-  <body>
+  <body style="overflow-y: hidden;">
     <!-- navbar here to use every steps -->
     <nav
       class="fixed top-0 w-full bg-white flex px-40 py-5 justify-between items-center"
@@ -34,7 +34,7 @@
       class="h-full w-full py-20 mb-20"
       style="background-color: rgb(250, 249, 249)"
     >
-      <h1 class="text-4xl text-center mb-4">We're About to Lock Your Device</h1>
+      <h1 class="text-4xl text-center mb-9">We're About to Lock Your Device</h1>
 
       <div
         style="height: 430px; width: 500px"
@@ -66,6 +66,7 @@
         <div class="flex justify-between px-40 py-7">
           <div class="before-button">
             <button
+            id="prev"
               class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
             >
               Before
@@ -116,6 +117,17 @@
             window.location.href = "./code.html"; // change to your page
             }, 300); // 300ms = smooth
         });
+
+        const prev = document.getElementById("prev")
+
+      prev.addEventListener("click", () => {
+         prev.classList.add("opacity-50");
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step6.html"; // change to your page
+        }, 300); // 300ms = smooth
+
+      })
     </script>
   </body>
 </html>

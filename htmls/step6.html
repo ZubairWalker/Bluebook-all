@@ -56,7 +56,7 @@
             <div class="w-80 shadow-lg bg-white px-4 py-4 rounded-lg">
                 <h3 class="font-bold text-center mb-2">Retype the Test Security Pledge</h3>
                 <hr class="mb-2 bg-gray-300" style="width: 320px; height: 2px; transform: translateX(-16px);">
-                <textarea class="focus:outline-none focus:ring-0 resize-none" rows="4" cols="35"></textarea>
+                <textarea class="focus:outline-none focus:ring-0 resize-none w-[280px]" rows="4" cols="32"></textarea>
             </div>
         </div>
       </div>
@@ -71,6 +71,7 @@
         <div class="flex justify-between px-40 py-7">
           <div class="before-button">
             <button
+            id="prev"
               class="bg-white border-2 border-black font-bold rounded-full px-4 py-2 hover:bg-yellow-400 hover:text-black transition-colors duration-200"
             >
               Before
@@ -110,6 +111,17 @@
           window.location.href = "./step7.html"; // change to your page
         }, 300); // 300ms = smooth
       });
+
+      const prev = document.getElementById("prev")
+
+      prev.addEventListener("click", () => {
+         prev.classList.add("opacity-50");
+        // Small delay so user sees the effect before redirect
+        setTimeout(() => {
+          window.location.href = "./step4.html"; // change to your page
+        }, 300); // 300ms = smooth
+
+      })
     </script>
   </body>
 </html>
