@@ -33,16 +33,18 @@
       class="h-full w-full py-20"
       style="background-color: rgb(250, 249, 249)"
     >
-      <h1 class="text-4xl text-center" style="transform: translateY(-30px);">Confirm Your Personal Information</h1>
+      <h1 class="text-4xl text-center" style="transform: translateY(-30px)">
+        Confirm Your Personal Information
+      </h1>
 
       <div
         class="flex flex-col justify-center m-auto bg-white shadow-lg p-6 border border-gray-200 flex-1 max-w-2xl mt-10"
-        style="height: 370px; transform: translateY(-30px);"
+        style="height: 370px; transform: translateY(-30px)"
       >
         <div class="flex gap-10 px py-5">
           <div class="flex-1">
             <h4 class="font-bold mb-2">First and Last Name</h4>
-            <h4 class="text-xl text-gray-700">Sardorbek Suyunov</h4>
+            <h4 id="output" class="text-xl text-gray-700">Sardorbek Suyunov</h4>
           </div>
           <div class="flex-1">
             <h4 class="font-bold mb-2">Accommodations</h4>
@@ -137,9 +139,13 @@
           window.location.href = "./htmls/step2.html"; // change to your page
         }, 300); // 300ms = smooth
       });
+
+      // const params = new URLSearchParams(window.location.search);
+      // const text = params.get("text");
+
+      // if (text) {
+      //   document.getElementById("output").textContent = text;
+      // }
     </script>
   </body>
-  
 </html>
-
-

@@ -45,7 +45,7 @@ startTimer();
 // toggle pause/resume
 pauseBtn.addEventListener("click", () => {
   isPaused = !isPaused;
-  pauseBtn.textContent = isPaused ? "Resume" : "Pause";
+  pauseBtn.textContent = isPaused ? "Resume" : "hide";
 });
 
 document.querySelectorAll(".highlight").forEach((el) => {
@@ -184,31 +184,6 @@ const questionBank = [
     question: "What is the result?",
     choices: ["6x⁵", "5x⁶", "6x⁶", "5x⁵"]
   },
-  {
-    text: `If 2x + y = 10 and x = 3, what is y?`,
-    question: "Find y.",
-    choices: ["4", "6", "10", "2"]
-  },
-  {
-    text: `Solve: 9x² = 81`,
-    question: "What is x?",
-    choices: ["x = ±3", "x = ±9", "x = 9", "x = 81"]
-  },
-  {
-    text: `If the probability of rain is 0.25, what is the probability it does not rain?`,
-    question: "Find the probability.",
-    choices: ["0.75", "0.25", "0.50", "0.10"]
-  },
-  {
-    text: `Find the slope of the line: y = 3x + 7`,
-    question: "What is the slope?",
-    choices: ["3", "7", "10", "-3"]
-  },
-  {
-    text: `If a rectangle has length 12 and width 5, what is its area?`,
-    question: "Find the area.",
-    choices: ["60", "17", "30", "25"]
-  }
 ];
 
 const answers = document.querySelectorAll(".answer");
@@ -237,7 +212,7 @@ function loadQuestion(index) {
 
 
 let currentQuestion = 1;
-const totalQuestions = 27;
+const totalQuestions = 22;
 
 const answersContainer = document.getElementById("answers");
 
