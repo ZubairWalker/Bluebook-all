@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Document</title>
   </head>
   <body style="overflow-y: hidden;">
@@ -13,12 +15,12 @@
       <a href="#!" title="Return to Home">Return to Home 🏠</a>
     </div>
 
-    <div class="content">
+    <div class="content h-screen">
       <h1>Start Code</h1>
-      <p>
+      <p class="piercing">
        Enter your start code now to begin testing. Good luck!
       </p>
-      <p>
+      <p class="piercing">
         The start code contains
         <span style="font-weight: bold">numbers only</span>.
       </p>
@@ -32,7 +34,7 @@
         <div class="code-inputs" id="codeInputs">
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_1"
@@ -40,7 +42,7 @@
 
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_2"
@@ -48,7 +50,7 @@
 
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_3"
@@ -56,7 +58,7 @@
 
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_4"
@@ -64,7 +66,7 @@
 
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_5"
@@ -72,16 +74,16 @@
 
           <input
             type="text"
-            class="code-input"
+            class="code-input border-2 border-black bg-white"
             maxlength="1"
             pattern="[0-9]"
             name="code_6"
           />
         </div>
-        <button type="submit"><a href="./bluesat.html" style="text-decoration: none; color: black;">Start Test</a></button>        
+        <button type="submit"><a href="./bluesat.html" class="text-black">Start Test</a></button>        
 
+        <p class="desc transform translate-y-[230px]">You can <a href="" class="text-purple-800 underline underline-offset-2 decoration-purple-800">review the instructions</a> that the proctor reads aloud</p>
       </form>
-      <p class="desc" style="margin-top: 37px;">You can <a href="">review the instructions</a> that the proctor reads aloud</p>
     </div>
 
     <script src="../javascripts/javascript.js"></script>
