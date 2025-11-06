@@ -83,73 +83,69 @@ const questionBank = [
     text: `The following text is from John Matheus's 1925 novel Fog. The story happens in a city where heavy fog has set in.`,
     question:
       "As used in the text, what does the word 'registered' most nearly mean?",
-    choices: [
-      "enrolled",
-      "valued",
-      "disregarded",
-      "displayed",
-    ],
+    choices: ["enrolled", "valued", "disregarded", "displayed"],
   },
   {
-    text: `The following text is from John Matheus's 1925 novel Fog. The story happens in a city where heavy fog has set in.`,
-    question: "As used in the text, what does the word 'registered' most nearly mean?",
-    choices: [
-      "enrolled",
-      "valued",
-      "disregarded",
-      "displayed",
-    ],
+    text: `The National Heritage Fellowship was created to publicly _______ exceptional folk and traditional artists in the United States. In 2012, the fellowship was given to the klezmer musician and composer Andy Statman to celebrate his lifetime contributions to the arts.`,
+    question:
+      "Which choice completes the text with the most logical and precise word or phrase",
+    choices: ["recognize", "familiarize", "convey", "startle"],
   },
   {
-    text: `In 1928, Alexander Fleming observed that mold had killed the bacteria around it...`,
-    question: "What discovery is described in the passage?",
-    choices: [
-      "The process of photosynthesis.",
-      "The invention of the microscope.",
-      "The discovery of penicillin.",
-      "The theory of relativity.",
-    ],
+    text: `The following text is adapted from Kenneth Grahame's 1908 novel The Wind
+in the Willows. The Mole is dazed after briefly meeting a stranger while
+traveling with a friend.
+[The] Mole stood still a moment, held in thought. As one wakened
+suddenly from a beautiful dream, who struggles to recall it, and can re-
+capture nothing but a dim sense of the beauty of indie—beauty! 'I‘ill that.
+too, fades away in its turn.`,
+    question:
+      "As used in the text, what does the word 'recall' most nearly mean?",
+    choices: ["Remember", "Return", "Activate", "Overlook"],
   },
   {
-    text: `Although fewer companies trade their stocks on the Tehran Stock Exchange in Tehran, Iran, than on the stock exchanges in London, Mumbai, or Tokyo, the Tehran Stock Exchange has the advantage of focusing on local companies and thus reflecting economic circumstances that are ______ Iran. This sensitivity to unique, rapidly evolving local conditions benefits the companies and investors alike.`,
-    question: "Which choice completes the text with the most logical and precise word or phrase?",
-    choices: [
-      "irrelevant to",
-      "prohibitive in",
-      "distinctive to",
-      "unchanging in",
-    ],
+    text: `British painter Peter Edwards is known for his portraits of notable figures in different field, from poet, Vahe Oshagan to casting director Ruth Lambert. Widespread admiration of these works has helped Edwards gain substantial _______ as an artist`,
+    question:
+      "Which choice completes the text with the most logical and precise word or phrase?",
+    choices: ["sympathy", "assistance", "tolerance", "prestige"],
   },
   {
-    text: `In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Caracas, Venezuela, and of Fortaleza, Brazil, were surveyed about parks in their cities. Of the 1,043 respondents from Caracas, 44.7% indicated that they use the city's parks, and of the 938 respondents from Fortaleza, 35.7% indicated using city parks.  however, given that the percentage of Caracas respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use.`,
-    question: "Which choice best describes the function of the underlined portion in the text as a whole?",
-    choices: [
-      "It introduces a counterexample to the scenario described earlier in the text",
-      "pIt provides context to help understand the scope of the researchers' survey.",
-      "It marks a shift from a discussion of the researchers’ conclusion to a discussion of their methods",
-      "It presents a potential explanation for the team's findings that the text goes on to refute",
-    ],
+    text: `The Krishna. River delta system is located in India, where the river drains
+intot'he‘Bay of Bengal, and is shaped by _____ factors: for example, the
+geography. of the coastline influences sedimentary deposition, which over
+timealters coastal geography.`,
+    question:
+      "Which choice completes the text with the most logical and precise warden phrase?",
+    choices: ["tenuous", "interdependent", "comprehensive", "unyielding"],
   },
   {
     text: `
-        The following text is adapted from Anton Chekhov's 1899 play Uncle Vanya . Professor Serebrakoff retires and moves to his country estate, which Vanya manages with the help of Sonia, the professor's daughter from a previous marriage. Chekhov portrays the professor as being someone unable to adjust to living at the country estate, as is evident when ______`,
-    question: "Which quotation from Uncle Vanya most effectively illustrates the claim?",
+        I'm the late 18003, Spanish-language newspapers flourished in cities across
+Texas. San Antonio alone produced eleven newspapers in Spanish between
+1890: and 1900. But El Paso surpassed all other cities in the state. This city
+produced twenty-two newspapers in Spanish during that period. El Paso is
+located on the border with Mexico and has always had a large population of
+Spanish speakers. Thus, it is unsurprising that this city became such a rich
+site for Spanish-language journalism.`,
+    question:
+      "Which choice best states the main purpose of the text?",
     choices: [
-      "Professor Serebrakoff says,I am a book-worm and a scholar, and am unfamiliar with practical affairs. I cannot, ",
-      "Professor Serebrakoff says to Helena, My darling, don't leave me alone with [Vanya]. He will begin",
-      "Professor Serebrakoff says to Helena,I am used to my library and the lecture hall and to the esteem and admiration of my colleagues. Now I suddenly find myself plunged into this wilderness(the cottage),",
-      " Vanya says to Professor Serebrakoff, You write on art without knowing anything about it. ",
+      "To compare Spanish-language newspapers published in Texas today with ones published there during the late 1803",
+      "To explain that Spanish-language newspapers thrived in'Texas and especially in El Paso during the late 1803",
+      "To argue that Spanish-language newspapers published in'Ell Paso influenced the ones published in San Antonio during thelate‘1803",
+      "To explain why Spanish-language newspapers publishedin Texas were so popular in Mexico during the late 1803",
     ],
   },
   {
     text: `In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Caracas, Venezuela, and of Fortaleza, Brazil, were surveyed about parks in their cities. Of the 1,043 respondents from Caracas, 44.7% indicated that they use the city's parks, and of the 938 respondents from Fortaleza, 35.7% indicated using city parks. However, given that the percentage of Caracas respondents who reported living within a 10-minute walk of a park was much lower than that reported by Fortaleza respondents, greater proximity alone can't explain the difference in park use.`,
-    question: "Which choice best describes the function of the underlined portion in the text as a whole?",
+    question:
+      "Which choice best describes the function of the underlined portion in the text as a whole?",
     choices: [
       "It introduces a counterexample to the scenario described earlier in the text.",
       "It supports the main claim with statistical evidence.",
       "It clarifies a term used earlier in the passage.",
-      "It provides historical context for the argument."
-    ]
+      "It provides historical context for the argument.",
+    ],
   },
   {
     text: `The Amazon rainforest, often referred to as the “lungs of the Earth,” produces a significant share of the world’s oxygen and houses an immense variety of species. Yet, in recent decades, widespread deforestation has threatened both biodiversity and the planet’s climate system. Scientists warn that if the pace of deforestation continues, the Amazon could reach a tipping point where its ecosystem can no longer sustain itself.`,
@@ -158,8 +154,8 @@ const questionBank = [
       "The Amazon is vital for both biodiversity and climate stability.",
       "The Amazon is primarily a source of timber and farmland.",
       "Deforestation in the Amazon has slowed in recent years.",
-      "The Amazon contributes little to the global environment."
-    ]
+      "The Amazon contributes little to the global environment.",
+    ],
   },
   // 3
   {
@@ -169,8 +165,8 @@ const questionBank = [
       "The process of photosynthesis.",
       "The theory of evolution.",
       "The discovery of penicillin.",
-      "The invention of anesthesia."
-    ]
+      "The invention of anesthesia.",
+    ],
   },
   // 4
   {
@@ -180,30 +176,47 @@ const questionBank = [
       "Women’s participation in the workforce supported the demand for political equality.",
       "Women’s economic roles were largely unimportant in 19th-century America.",
       "Suffragists discouraged women from seeking employment outside the home.",
-      "Political equality had already been achieved for women by the late 19th century."
-    ]
+      "Political equality had already been achieved for women by the late 19th century.",
+    ],
   },
   // 5
   {
-    text: `In the early 20th century, Albert Einstein’s theory of relativity challenged Newtonian physics by proposing that space and time are not absolute but relative to the observer. Though initially met with skepticism, the theory was confirmed by the 1919 solar eclipse, when light was observed bending around the sun exactly as Einstein predicted.`,
-    question: "Which best describes the significance of the 1919 eclipse?",
+    text: `Paris has high pedestrian traffic, but simply replicating a feature of Paris
+associated with walkability—e.g., its high number of car-free areas—may be
+insufficient to induce increased walking in other cities. As urbanist Mariela
+Alfonzo. argues, our understanding of individuals' decision-making about
+Whether to walk is insufficiently robust: some studies emphasize the role of
+climate conditions, others the role of population density, and so on, but
+walkingdecisions are made in complex contexts in which multiple
+conditions and needs inform individuals' choices.`,
+    question: "Based on the text, Alfonzo would most likely agree with. which‘statement? about studies of decision-making about walking?",
     choices: [
-      "It disproved Einstein’s predictions about gravity.",
-      "It provided experimental support for relativity.",
-      "It established Newtonian physics as fully accurate.",
-      "It demonstrated that light travels instantaneously."
-    ]
+      "They tend to be misleading because they ignore the most important factor influencing walking decisions.",
+      "They have overstated the extent to which people differ in their decision-making processes regarding walking..",
+      "They would be improved by efforts to identify the features that cities with high pedestrian traffic have in common.",
+      "They are unlikely to find convincing evidence that any single-factor consistently predicts walking decisions.",
+    ],
   },
   // 6
   {
-    text: `In 1831, Charles Darwin embarked on the HMS Beagle, a journey that profoundly shaped his understanding of natural history. His observations of species on the Galápagos Islands, particularly the finches with their varied beak shapes, led him to consider how organisms adapt to their environments over time. These insights contributed directly to his theory of natural selection.`,
-    question: "According to the passage, Darwin’s observations of finches led him to conclude that—",
+    text: `Biologist Rosanna Alegado believes that we might learn how multicellular
+Organisms deVeloped from single-celled ones if we understand why the
+single-celled organism Salpingoeca rosette, the oldest living relative of
+animals, sometimes forms colonies of cells. Alegado and colleagues
+reviewed data from many studies of how 8. rosette responds when exposed
+to another type of single-celled organism, bacteria, including Stefanie van
+Trappen's work with Algoriphagus vanfongensis bacteria and John P.
+Bowman's work with Algoriphagus rat/(owskyi bacteria. Alegado and
+colleagues concluded that both A. vanfongensis and A. ratkowskyi might
+have played a role in the development of multicellular organisms.`,
+    question:
+      "Which finding, if true, would most directly support Alegadoandcolleagues' conclusion?",
     choices: [
-      "all finches originated in Europe.",
-      "species adapt to their surroundings over generations.",
-      "environmental changes have little effect on species.",
-      "birds cannot migrate across islands."
-    ]
+      "S. rosette tended to form colonies when exposed to A. venfongensis and when exposed to A. retkowskyi.",
+      "Although several studies involving other bacteria species found that S. rosette tended to form colonies after bacteria exposure, only the studies using A. venfongensis and A. retkowskyi tested whether the amount of bacteria exposure affected the rate of colony formation.",
+      "S. rosette tended to form colonies when exposed to A. retkptttskyi but not when exposed to A. venfongensis.",
+      "S. rosette tended to form colonies when exposed toA. trenfongensis but not when expoSed to .A. retkowskyi.",
+    ],
   },
   // 7
   {
@@ -213,8 +226,8 @@ const questionBank = [
       "Economic stagnation in rural villages.",
       "The dangers of urban overcrowding and poor living conditions.",
       "The efficiency of factory work in Britain.",
-      "The decline of industrial growth in the 19th century."
-    ]
+      "The decline of industrial growth in the 19th century.",
+    ],
   },
   // 8
   {
@@ -224,19 +237,25 @@ const questionBank = [
       "Her research was limited to teaching rather than discovery.",
       "She made significant contributions despite obstacles.",
       "She relied heavily on the work of other scientists.",
-      "She abandoned research after early experiments failed."
-    ]
+      "She abandoned research after early experiments failed.",
+    ],
   },
   // 9
   {
-    text: `In recent years, psychologists have studied the role of “grit,” or perseverance and passion for long-term goals, in predicting success. Some studies suggest grit may be as important as intelligence in academic achievement. However, critics argue that focusing too heavily on grit may overlook structural inequalities that influence outcomes.`,
-    question: "What is the author’s perspective on grit?",
+    text: `TheStudy'on Global Ageing and Adult Health (SAGE) examines trends in
+aging among 66,000 people in multiple countries unfolding over many
+years. As is true of most longitudinal studies, this need for years of data
+collectiOn results in high costs. By contrast, a relatively straightforward
+sociology study, such as one that is merely trying to identify the average age
+at which peOple in a given city first become parents, may not need a large
+budget because ______`,
+    question: "Which choice most logically completes the text?",
     choices: [
-      "It is the sole determinant of academic achievement.",
-      "It should not be studied scientifically.",
-      "Its importance is debated among scholars.",
-      "It is unrelated to intelligence."
-    ]
+      "longitudinal methods are probably suitable for the sociology study.",
+      "it would be easy for SAGE researchers to add questions to their aging study.",
+      "66.000 people is more than enough for SAGE to find trends in aging.",
+      "the sociology study can be done well without years of data collection.",
+    ],
   },
   // 10
   {
@@ -246,129 +265,187 @@ const questionBank = [
       "The belief that rulers should govern without limits.",
       "The principle that authority comes from the people.",
       "The view that hereditary monarchy is necessary.",
-      "The argument that democracy leads to chaos."
-    ]
+      "The argument that democracy leads to chaos.",
+    ],
   },
   // 11
   {
-    text: `The Great Depression of the 1930s devastated economies across the globe. In the United States, unemployment reached unprecedented levels, and many families lost their homes and savings. President Franklin D. Roosevelt responded with the New Deal, a series of programs aimed at providing relief, recovery, and reform to the struggling nation.`,
-    question: "What was the primary purpose of the New Deal?",
+    text: `Oyster mushrooms typically get their nutrients from the damp logs on
+which they grow, but the fungi are also carnivorous, with the ability to kill
+and consume microsc0pic worms known as nematodes. As researcher Yen-
+Ping Hsueh has shown, the mushrooms release a toxin that is deadly to
+nematodes that ______ in contact with it.`,
+    question: "Which choice completes the text so that it conforms to the conventionspf Standard English?",
     choices: [
-      "To punish banks for risky lending practices.",
-      "To provide assistance and stimulate recovery.",
-      "To expand U.S. territory overseas.",
-      "To end international trade agreements."
-    ]
+      "has come",
+      "comes",
+      "is coming",
+      "come",
+    ],
   },
   // 12
   {
-    text: `In recent decades, scientists have debated whether Pluto should be classified as a planet. When astronomers discovered other celestial bodies of similar size beyond Neptune, the International Astronomical Union in 2006 redefined the criteria for planethood, reclassifying Pluto as a “dwarf planet.” The decision sparked both controversy and nostalgia.`,
-    question: "Why was Pluto reclassified as a dwarf planet?",
+    text: `Cut, bent, and welded from discarded metal materials, the sculptures of
+London-based Nigerian artist Sokari Douglas Camp are meant to challenge
+viewers to consider their own relationships to material __ her thought-
+.provoking works in the 1985 to 1988 exhibition Alali at the October Gallery
+tin-London were no different.`,
+    question: "Which choice completes the text so that it conforms to the conventions of Standard English",
     choices: [
-      "It lacked sufficient size and clear orbit.",
-      "It had no moons to support its status.",
-      "It was closer to Earth than other planets.",
-      "It collided with another celestial body."
-    ]
+      "wastes",
+      "wastes,",
+      "wastes;",
+      "wastes and to",
+    ],
   },
   // 13
   {
-    text: `Harriet Tubman, once enslaved, became a leading figure in the Underground Railroad, guiding dozens of enslaved people to freedom. Beyond her rescues, Tubman served as a spy and nurse during the Civil War. Her courage and determination made her an enduring symbol of resistance and justice.`,
-    question: "Which best describes Tubman’s role during her lifetime?",
+    text: `Scholar‘s Tamy Kernodle and Paul Austerlitz have lent their expertise on
+Black history-and music to an important new project: the Timeline of
+African American Music, a digital _ through a rich combination of text,
+imagesand music clips, traces the development of specific musical genres
+(such as funk and swing)`,
+    question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
     choices: [
-      "She was a passive observer of the abolitionist movement.",
-      "She risked her life repeatedly to fight for freedom.",
-      "She limited her efforts to her own escape.",
-      "She opposed the Civil War’s abolitionist goals."
-    ]
+      "resource, that",
+      "resource, that,",
+      "resource that,",
+      "resource that",
+    ],
   },
   // 14
   {
-    text: `Global climate change has increased the frequency of extreme weather events such as hurricanes, droughts, and heat waves. Scientists emphasize that these patterns are consistent with rising greenhouse gas emissions caused by human activity. While adaptation is possible, many warn that without mitigation, the risks will intensify.`,
-    question: "What is the author’s main concern?",
+    text: `In-Los Angeles County, California, bicycle paths such as the Browns Creek
+bike trail—which is about 0.91 miles long—have become an increasingly popular means of travel. Moreover, lawyer and cycling _____ has identified
+several features of the Los Angeles landscape, like its temperate climate and
+mostly flat roads, that make the city naturally bike-friendly.`,
+    question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
     choices: [
-      "That extreme weather has natural causes only.",
-      "That human activity is intensifying climate risks.",
-      "That adaptation is impossible in any form.",
-      "That greenhouse gases are declining worldwide."
-    ]
+      "advocate, Ernesto Hernandez—Lopez,",
+      "advocate Ernesto Hernandez-Lopez",
+      "advocate Ernesto Hernandez-Lopez,",
+      "advocate, Ernesto Hernandez-Lopez",
+    ],
   },
   // 15
   {
-    text: `Shakespeare’s plays continue to be studied not merely for their historical value but for their insights into human nature. Characters like Hamlet and Macbeth embody struggles with morality, ambition, and fate that still resonate today. Modern directors adapt these plays to contemporary settings, demonstrating their timeless relevance.`,
-    question: "Why are Shakespeare’s works considered timeless?",
+    text: `Ecologists like David N.M. Mbora use trophic pyramids to illustrate the food
+Chain within a given ecosystem. At a typical pyramid's base are primary
+producers, like plants, followed by herbivores at the second trophic level,
+then Omnivores and carnivores at the third. ______  at the fourth, highest
+trophic level are apex predators, like tigers, that feed on the animals below.`,
+    question: "Which choice completes the text with the most logical transition?",
     choices: [
-      "They focus solely on historical events.",
-      "Their themes of human struggle remain relevant.",
-      "They are written in modern, easy-to-read English.",
-      "They avoid exploring universal emotions."
-    ]
+      "In fact,",
+      "Besides,",
+      "For example,",
+      "Lastly,",
+    ],
   },
   // 16
   {
-    text: `During the Cold War, the United States and the Soviet Union engaged in an arms race, developing nuclear weapons capable of unprecedented destruction. The policy of “mutually assured destruction” discouraged direct conflict, as leaders on both sides recognized that nuclear war would be catastrophic for all.`,
-    question: "What prevented direct conflict between the U.S. and the Soviet Union?",
+    text: `In a: 2022 analysis of 200 terms, researchers found a broad pattern of
+valence-dependent mutation in which negative adjectives saw a faster rate
+of Cognate replacement—the rate at which a word will be replaced over
+time with a noncognate form—than other words. _____ the adjective
+"illegal" would be expected to mutate faster than the noun "debt."`,
+    question:
+      "Which choice completes the text with the most logical transition?",
     choices: [
-      "Mutual fear of catastrophic nuclear consequences.",
-      "A shared commitment to disarmament.",
-      "The collapse of Soviet influence worldwide.",
-      "International treaties banning all weapons."
-    ]
+      "Thus,",
+      "Meanwhile,",
+      "However",
+      "Morever,",
+    ],
   },
   // 17
   {
-    text: `In the 15th century, Johannes Gutenberg’s invention of the movable-type printing press transformed European society. For the first time, books could be mass-produced, spreading knowledge far beyond monasteries and universities. The invention is often credited with fueling the Renaissance and the Protestant Reformation.`,
-    question: "What was one major effect of Gutenberg’s printing press?",
+    text: `In thexearly 19703, Albert Popa took up graffiti art, spraying his work onto
+whatwasat the time an unconventional surface: concrete. ______ Albert's
+son David has chosen an unusual canvas for his new art project, Fractured.
+Inthisremarkable work, the artist draws charcoal faces onto fragmented
+ice flees in Finland, creating the visual effect of a face slowly fracturing.`,
+    question: "Which choice completes the text with the most logical transition?",
     choices: [
-      "It restricted access to books.",
-      "It enabled widespread distribution of knowledge.",
-      "It reduced literacy rates in Europe.",
-      "It discouraged religious debate."
-    ]
+      "However,",
+      "Indeed,",
+      "Second,",
+      "Likewise",
+    ],
   },
-  // 18
+  // 18 
   {
-    text: `Modern genetic research has revealed that humans share about 98–99% of their DNA with chimpanzees. This finding highlights the close evolutionary relationship between species, while also emphasizing how small genetic differences can account for vast behavioral and cognitive distinctions.`,
-    question: "What does the passage suggest about human-chimpanzee genetics?",
+    text: `• Ynés Mexia was a Mexican American botanist. Between 1917 and 1938, she collected over 150,000 botanical samples throughout the Americas.
+• She collected a sample ofAchyrocline veuthieriene in Minas Gerais, Brazil, on May 3, 1930.
+• She collected a sample of Vernonie lietroides in jalisco. Mexico. on February 14, 1927.
+• These specimens are members of the Asteraceae family. They can now be viewed online at the CV. Starr Virtual Herbarium.`,
+    question: "Which choice most effectively uses information from the given sentences to emphasize when she collected both of the samples?",
     choices: [
-      "The species share very little DNA.",
-      "Small genetic differences create significant distinctions.",
-      "Humans evolved directly from modern chimpanzees.",
-      "Genetic comparisons are scientifically meaningless."
-    ]
+      "Thousands of botanical samples collected by Ynés Mexia can now be found in one place: online at the CV. Starr Virtual Herbarium.",
+      "SOn May 3 in 1930. Ynés Mexia addetl a new specimen to her growing collection of botanical samples: Achyrocline veutlzieriene of the Asteraceae family.",
+      "While both specimens collected by Ynés Mexia are members of the same family. chlu-rrocline reuthieriene was found in Minas Gerais anti Il'ernonie Iietroides was found in jalisco.",
+      "Ynés Mexia collected a sample of .tlclwrocline vettthieriene in May of 1930, after collecting lr'ernonie Iietroides in February of 1927",
+    ],
   },
   // 19
   {
-    text: `The construction of the transcontinental railroad in the United States linked the Atlantic and Pacific coasts, dramatically reducing travel time across the country. While the project spurred economic growth, it also displaced Native American communities and altered ecosystems.`,
-    question: "What was one consequence of the transcontinental railroad?",
+    text: `While researching a topic, a student has taken the following notes:
+• In 1965, Yale University historians claimed that a world map called
+the Vinland Map was drawn in the fifteenth century.
+• Since that time, the map's age has been the subject of debate.
+• In 2021, researchers conducted a study to analyze the elemental
+composition of the map's ink.
+- Their analysis revealed that the ink contains a titanium compound
+not used in inks until the 19203.
+• The researchers concluded that the map was drawn in the twentieth
+century.`,
+    question: "The student wants to present the stutly and its findings. Which choice most effectively uses relevant information from the notes to accomplish this goal? ",
     choices: [
-      "It eliminated economic opportunities in the West.",
-      "It displaced Indigenous peoples and altered landscapes.",
-      "It prevented migration and trade across the country.",
-      "It failed to connect the coasts effectively."
-    ]
+      "Given the debate about the Vinland Map's age, researchers in 2021 contlucted a study to analyze the elemental composition of the maps ink.",
+      "A 2021 study of the Vinland Map's ink revealed that it contains a titanium compound not used in inks until the 19203, indicating that the map was drawn in the twentieth century.",
+      "The Vinland Map. believed by some to have been drawn in the fifteenth century. was the focus of a 2021 study.",
+      "Aware that a certain titanium compound was not used in inks until the 19203. researchers in 2021 studied the elemental composition of the vinland man's ink",
+    ],
   },
   // 20
   {
-    text: `Jane Austen’s novels, though written in the early 19th century, continue to attract readers with their sharp social commentary and memorable characters. Works like Pride and Prejudice critique the limitations placed on women in a society that valued marriage as economic security.`,
-    question: "What theme is central in Austen’s novels?",
+    text: `While researching a topic, a student has taken the following notes,
+    • The Santa Catalina Mountains are a mountain range located in the southwest United States.
+    • The range is one of the dozens of "sky island" in the southwestern US and northwestern Mexico.
+    • A sky island is an isolated mountain range whose environment differs drastically from that of a surrounding lowlands.
+    • The US Forest Service (USFS) said "The Mountains are islands" surrounded by deserts that are seas
+    • The USFS said "Each Sky island is a unique ecosystem"
+    `,
+    question: "The student wants to explain what a sky island is. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     choices: [
-      "The benefits of absolute monarchy.",
-      "The challenges of women navigating social expectations.",
-      "The decline of literature in the 19th century.",
-      "The importance of military conquest."
-    ]
+      "The USFS considers the Santa Catalina Mountains to he a unique ecosystem.",
+      "A sky island is an isolated mountain range. such as the Santa (‘Catalina Mountains in the southwestern US, whose environment differs drastically from that of the surrounding lowlands.",
+      "The Santa Catalina Mountains. which are considered to he a sky island. are located in the southwestern US.",
+      "The Santa Catalina Mountains are an isolated mountain range located in the southwestern United States whose environment differs drastically from that of the surrounding lowlands.",
+    ],
   },
   // 21
   {
-    text: `The space race of the 1960s symbolized Cold War competition between the U.S. and the Soviet Union. The Soviet launch of Sputnik in 1957 shocked Americans, while the U.S. landing on the moon in 1969 represented a triumph of technology and national pride.`,
-    question: "What did the moon landing symbolize?",
+    text: `While researching a topic, a student has taken the following notes:
+- The international Center for the Arts of the Americas (ICAA) is
+directed by Mari Carmen Ramirez.
+
+• Ramirez oversaw an initiative to create an online archive of
+historical documents related to the history of Latin American and
+Latino visual art.
+
+• The lCAA digitized over 10,000 documents, including the writings of
+. Latin American and Latino artists and critics.
+• Thecreation of the archive didn't require historical documents to I):
+removed from their countries of origin.
+-- .S'c‘holars now have more access to these documents.`,
+    question: " The student wants to explain an advantage of the ICAA's archive being digital. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     choices: [
-      "An end to global technological progress.",
-      "A U.S. victory in the space race.",
-      "A cooperative effort between nations.",
-      "The failure of Cold War competition."
-    ]
+      "Over 10000 documents related to the history of Latin American and Latino visual art are part of the ICAA archive.",
+      "By offering online versions of historical documents, the ICAA's archive provides more access to these materials without removing them from their countries of origin.",
+      "Among the historical documents in the ICAA'S archive are the writings of Latin American and Latino artists and critics.",
+      "l‘he lCAA-‘s director. Mari Carmen Ramirez,oversawthe creation of an online archive of historical documents related to Latin American and Latino visual art.",
+    ],
   },
 ];
 
@@ -379,9 +456,9 @@ const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 const qNumEl = document.getElementById("question-number");
 
-const readingEl = document.querySelector('.reading-question'); // h2
-const questionEl = document.querySelector('.font-weight'); // h3
-const choiceButtons = document.querySelectorAll('.answer .answer-text');
+const readingEl = document.querySelector(".reading-question"); // h2
+const questionEl = document.querySelector(".font-weight"); // h3
+const choiceButtons = document.querySelectorAll(".answer .answer-text");
 
 function loadQuestion(index) {
   const q = questionBank[index];
@@ -394,8 +471,6 @@ function loadQuestion(index) {
 
   clearSelections(); // reset styles
 }
-
-
 
 let currentQuestion = 1;
 const totalQuestions = 27;
@@ -450,7 +525,7 @@ nextBtn.addEventListener("click", () => {
     currentQuestion++;
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
-     loadQuestion(currentQuestion - 1);
+    loadQuestion(currentQuestion - 1);
     // TODO: load new question + answers here
   }
 });
@@ -460,7 +535,7 @@ prevBtn.addEventListener("click", () => {
     currentQuestion--;
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
-     loadQuestion(currentQuestion - 1);
+    loadQuestion(currentQuestion - 1);
     // TODO: load previous question + answers here
   }
 });
