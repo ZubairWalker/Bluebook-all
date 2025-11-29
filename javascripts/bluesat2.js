@@ -33,8 +33,8 @@ function startTimer() {
       // ⬇️ when timer ends
       if (timeLeft === 0) {
         clearInterval(timerInterval);
-        // redirect user to another html file
-        window.location.href = "pitstopEnglish2.html";
+        // redirect user to breaktimer.html
+        window.location.href = "breaktimer.html";
         // OR: window.location.replace("result.html");
       }
     }
