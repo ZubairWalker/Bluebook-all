@@ -1,6 +1,6 @@
-let duration = 35 * 60; // 32 minutes in seconds 32 * 60
-let timeLeft = duration;
-let isPaused = false;
+let duration = 35 * 60; // 35 minutes in seconds
+let timeLeft = sessionStorage.getItem("timeLeft") ? parseInt(sessionStorage.getItem("timeLeft")) : duration;
+let isPaused = sessionStorage.getItem("isPaused") ? sessionStorage.getItem("isPaused") === "true" : false;
 let timerInterval;
 
 const timerDisplay = document.getElementById("timer");
@@ -18,6 +18,9 @@ function formatTime(seconds) {
 // update display
 function updateTimer() {
   timerDisplay.textContent = formatTime(timeLeft);
+  // Save timer state to sessionStorage
+  sessionStorage.setItem("timeLeft", timeLeft);
+  sessionStorage.setItem("isPaused", isPaused);
 }
 
 // start countdown
@@ -30,6 +33,10 @@ function startTimer() {
       // ⬇️ when timer ends
       if (timeLeft === 0) {
         clearInterval(timerInterval);
+        // Reset timer and question for math2
+        sessionStorage.setItem("timeLeft", duration);
+        sessionStorage.setItem("isPaused", false);
+        sessionStorage.setItem("currentQuestion", 1);
         // redirect user to another html file
         window.location.href = "math2.html";
         // OR: window.location.replace("result.html");
@@ -45,7 +52,8 @@ startTimer();
 // toggle pause/resume
 pauseBtn.addEventListener("click", () => {
   isPaused = !isPaused;
-  pauseBtn.textContent = isPaused ? "Resume" : "Pause";
+  pauseBtn.textContent = isPaused ? "Resume" : "hide";
+  sessionStorage.setItem("isPaused", isPaused);
 });
 
 document.querySelectorAll(".highlight").forEach((el) => {
@@ -92,8 +100,8 @@ the car, in miles per hour, on this part of the trip?`,
     choices: ["x = 2", "x = 6", "x = -6", "x = 9"],
   },
   {
-    text: `Solve: 5x² = 80`,
-    question: "What is the solution?",
+    text: `5x + 4y = 3, 15x + 12y = 9`,
+    question: " For each real number 7', which of the following points lies on the graph of each equation in the xy-plane for the given system ",
     choices: ["x = ±4", "x = ±5", "x = 8", "x = -8"],
   },
   {
@@ -274,7 +282,13 @@ nextBtn.addEventListener("click", () => {
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
     loadQuestion(currentQuestion - 1);
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
     // TODO: load new question + answers here
+  } else if (currentQuestion === totalQuestions) {
+    // At last question: save state and go to pitstop page
+    sessionStorage.setItem("currentQuestion", currentQuestion);
+    window.location.href = "pitstopMath.html";
   }
 });
 
@@ -285,7 +299,24 @@ prevBtn.addEventListener("click", () => {
     qNumberSpan.textContent = currentQuestion;
     loadQuestion(currentQuestion - 1);
     // TODO: load previous question + answers here
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
   }
 });
 
 // init
+// Restore question state from sessionStorage if navigating back from pitstopMath
+if (sessionStorage.getItem("currentQuestion")) {
+  currentQuestion = parseInt(sessionStorage.getItem("currentQuestion"));
+  // Cap restored question to available totalQuestions
+  if (currentQuestion > totalQuestions) {
+    currentQuestion = totalQuestions;
+  } else if (currentQuestion < 1) {
+    currentQuestion = 1;
+  }
+  qNumber.textContent = currentQuestion;
+  qNumberSpan.textContent = currentQuestion;
+  loadQuestion(currentQuestion - 1);
+  // Refresh footer/button states
+  if (typeof updateQuestionNumber === 'function') updateQuestionNumber();
+}

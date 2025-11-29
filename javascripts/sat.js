@@ -1,6 +1,7 @@
-let duration = 32 * 60; // 32 minutes in seconds 32 * 60
-let timeLeft = duration;
-let isPaused = false;
+// entire timer
+const duration = 32 * 60; // 32 minutes in seconds
+let timeLeft = sessionStorage.getItem("timeLeft") ? parseInt(sessionStorage.getItem("timeLeft")) : duration;
+let isPaused = sessionStorage.getItem("isPaused") ? sessionStorage.getItem("isPaused") === "true" : false;
 let timerInterval;
 
 const timerDisplay = document.getElementById("timer");
@@ -18,6 +19,9 @@ function formatTime(seconds) {
 // update display
 function updateTimer() {
   timerDisplay.textContent = formatTime(timeLeft);
+  // Save timer state to sessionStorage
+  sessionStorage.setItem("timeLeft", timeLeft);
+  sessionStorage.setItem("isPaused", isPaused);
 }
 
 // start countdown
@@ -30,6 +34,10 @@ function startTimer() {
       // ⬇️ when timer ends
       if (timeLeft === 0) {
         clearInterval(timerInterval);
+        // Reset timer and question for bluesat2
+        sessionStorage.setItem("timeLeft", duration);
+        sessionStorage.setItem("isPaused", false);
+        sessionStorage.setItem("currentQuestion", 1);
         // redirect user to another html file
         window.location.href = "bluesat2.html";
         // OR: window.location.replace("result.html");
@@ -77,6 +85,8 @@ bookmark.addEventListener("click", () => {
   bookmark.classList.toggle("bg-red-500"); // Tailwind red background
   bookmark.classList.toggle("text-white"); // make icon visible on red
 });
+
+// Entire timer 
 
 const questionBank = [
   {
@@ -526,18 +536,31 @@ nextBtn.addEventListener("click", () => {
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
     loadQuestion(currentQuestion - 1);
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
     // TODO: load new question + answers here
+  } else if (currentQuestion === totalQuestions) {
+    // Redirect to pitstopEnglish.html when quiz ends
+    window.location.href = "pitstopEnglish.html";
   }
-});
-
-prevBtn.addEventListener("click", () => {
+  
+});prevBtn.addEventListener("click", () => {
   if (currentQuestion > 1) {
     currentQuestion--;
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
     loadQuestion(currentQuestion - 1);
     // TODO: load previous question + answers here
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
   }
 });
 
 // init
+// Restore question state from sessionStorage if navigating back from pitstopEnglish
+if (sessionStorage.getItem("currentQuestion")) {
+  currentQuestion = parseInt(sessionStorage.getItem("currentQuestion"));
+  qNumber.textContent = currentQuestion;
+  qNumberSpan.textContent = currentQuestion;
+  loadQuestion(currentQuestion - 1);
+}

@@ -1,6 +1,6 @@
-let duration = 35 * 60; // 32 minutes in seconds 32 * 60
-let timeLeft = duration;
-let isPaused = false;
+let duration = 35 * 60; // 35 minutes in seconds
+let timeLeft = sessionStorage.getItem("timeLeft") ? parseInt(sessionStorage.getItem("timeLeft")) : duration;
+let isPaused = sessionStorage.getItem("isPaused") ? sessionStorage.getItem("isPaused") === "true" : false;
 let timerInterval;
 
 const timerDisplay = document.getElementById("timer");
@@ -18,6 +18,9 @@ function formatTime(seconds) {
 // update display
 function updateTimer() {
   timerDisplay.textContent = formatTime(timeLeft);
+  // Save timer state to sessionStorage
+  sessionStorage.setItem("timeLeft", timeLeft);
+  sessionStorage.setItem("isPaused", isPaused);
 }
 
 // start countdown
@@ -46,6 +49,7 @@ startTimer();
 pauseBtn.addEventListener("click", () => {
   isPaused = !isPaused;
   pauseBtn.textContent = isPaused ? "Resume" : "hide";
+  sessionStorage.setItem("isPaused", isPaused);
 });
 
 document.querySelectorAll(".highlight").forEach((el) => {
@@ -264,8 +268,14 @@ nextBtn.addEventListener("click", () => {
     currentQuestion++;
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
-     loadQuestion(currentQuestion - 1);
+    loadQuestion(currentQuestion - 1);
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
     // TODO: load new question + answers here
+  } else if (currentQuestion === totalQuestions) {
+    // At last question: save state and go to pitstop page
+    sessionStorage.setItem("currentQuestion", currentQuestion);
+    window.location.href = "pitstopMath2.html";
   }
 });
 
@@ -274,9 +284,26 @@ prevBtn.addEventListener("click", () => {
     currentQuestion--;
     qNumber.textContent = currentQuestion;
     qNumberSpan.textContent = currentQuestion;
-     loadQuestion(currentQuestion - 1);
+    loadQuestion(currentQuestion - 1);
     // TODO: load previous question + answers here
+    // Save current question state to sessionStorage
+    sessionStorage.setItem("currentQuestion", currentQuestion);
   }
 });
 
 // init
+// Restore question state from sessionStorage if navigating back from pitstopMath2
+if (sessionStorage.getItem("currentQuestion")) {
+  currentQuestion = parseInt(sessionStorage.getItem("currentQuestion"));
+  // Cap restored question to available totalQuestions
+  if (currentQuestion > totalQuestions) {
+    currentQuestion = totalQuestions;
+  } else if (currentQuestion < 1) {
+    currentQuestion = 1;
+  }
+  qNumber.textContent = currentQuestion;
+  qNumberSpan.textContent = currentQuestion;
+  loadQuestion(currentQuestion - 1);
+  // Refresh footer/button states
+  if (typeof updateQuestionNumber === 'function') updateQuestionNumber();
+}
